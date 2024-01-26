@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="test">
+
+
+  <!-- import main macro -->
+  <xacro:include filename="$(find openzen_sensor)/urdf/imu.ros2_control.xacro" />
+
+  <!-- create link fixed to the "world" -->
+  <link name="world" />
+
+  <!-- force sensor -->
+
+  <!-- robotiq sensor hardware -->
+  <xacro:imu/>
+
+</robot>

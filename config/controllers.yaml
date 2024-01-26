@@ -1,0 +1,19 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+    
+    imu_broadcaster:
+      type: imu_sensor_broadcaster/IMUSensorBroadcaster
+
+imu_broadcaster:
+  ros__parameters:
+    sensor_name: imu
+    state_interface_names:
+      - linear.x
+      - linear.y
+      - linear.z
+      - orientation.x
+      - orientation.y
+      - orientation.z
+      - orientation.w
+    frame_id: imu_frame

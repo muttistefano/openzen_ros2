@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>openzen_sensor</name>
+  <version>1.3.2</version>
+  <description>ROS driver for LP-Research inertial measurement units and satellite navigation senors</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag --> 
+  <maintainer email="yap@lp-research.com">H.E. YAP</maintainer>
+  <maintainer email="yongkin@lp-research.com">Yongkin</maintainer>
+  <maintainer email="lxf@alubi.cn">Feng</maintainer>
+  
+
+  <!-- This packages license -->
+  <license>MIT</license>
+  <!-- licenses used by OpenZen and its dependencies -->
+  <license>Boost Software License</license>
+  <license>LGPLv3</license>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>hardware_interface</build_depend>
+  <build_depend>pluginlib</build_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+	<export>
+		<!-- Other tools can request additional information be placed here -->
+		<build_type>ament_cmake</build_type>
+	</export>
+</package>

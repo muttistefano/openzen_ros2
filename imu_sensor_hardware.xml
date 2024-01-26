@@ -1,0 +1,9 @@
+<library path="imu_sensor_hardware">
+  <class name="imu_sensor_hardware/IMUSensorHardware"
+         type="imu_sensor_hardware::IMUSensorHardware"
+         base_class_type="hardware_interface::SensorInterface">
+    <description>
+      Implements a Hardware Interface plugin for the openzed imu
+    </description>
+  </class>
+</library>
